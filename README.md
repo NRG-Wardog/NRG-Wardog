@@ -2,7 +2,7 @@
 
 🔭 I’m currently working on  
 - **AntiVirus**: signature + heuristic scanning engine (C/C++)  
-- **mini-EDR**: endpoint telemetry → detections → alerts (Windows-focused)
+- **EDR**: endpoint telemetry → detections → alerts (Windows-focused)
 
 🌱 I’m currently learning  
 - Windows internals for defenders (visibility + detection, not offense)  
