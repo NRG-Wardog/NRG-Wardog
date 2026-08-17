@@ -1,215 +1,310 @@
 # 👋 Hi, I'm Dorian Salomon
 
-### Software Engineer | AI/ML & Security | C/C++ · Python · Windows · NLP
+### Software Engineer | Endpoint Security & Applied AI/ML
 
-I build systems at the intersection of **AI, data, security, and low-level software engineering**.
+**C/C++ · Python · Windows · NLP · Machine Learning**
 
-My work ranges from **ML/NLP pipelines and data-understanding systems** to
-**Windows security tooling, endpoint telemetry, automation, and C/C++ systems programming**.
+I build systems at the intersection of **endpoint security, artificial intelligence, data, and systems engineering**.
 
-At **HigherYou**, I work on AI-driven systems for understanding, structuring, and processing data,
-using **Machine Learning, NLP, automation, and backend infrastructure** to turn raw information
-into useful decisions and workflows.
+My work spans low-level Windows security development in **C/C++**, applied **Machine Learning and NLP** in Python, backend systems, automation, and data-processing pipelines.
 
----
-
-## 🚀 What I'm Working On
-
-### 🤖 AI / ML / Data Systems
-
-Building practical AI systems focused on:
-
-- NLP and text understanding
-- Information extraction and classification
-- Data normalization and structuring
-- ML-based decision pipelines
-- Entity and semantic matching
-- Automated data processing
-- Model evaluation and false-positive reduction
-- Production-oriented AI workflows
-
-A major part of my work is turning **unstructured real-world data into structured, actionable information**.
+At **HigherYou**, I work on AI-driven systems that transform large amounts of real-world and unstructured data into structured information, matching signals, automated workflows, and actionable decisions.
 
 ---
 
-### 🛡️ Endpoint Security & Detection
+## 🚀 Featured Projects
 
-Exploring endpoint security from the engineering side:
+### 🛡️ [AYDO](https://github.com/NRG-Wardog/Aydo)
 
-- Windows endpoint telemetry
-- Detection engineering
-- Behavioral baselining
-- Alert generation
-- Detection tuning
-- False-positive control
-- PE/file analysis
-- Reliable endpoint services
+**Windows Endpoint Security Platform**
 
-Current direction:
+AYDO is my main endpoint-security project, built to explore and implement the architecture behind modern **AV / EDR systems**.
 
-**Endpoint → Telemetry → Detection → Alert → Triage**
+The project spans endpoint components, backend infrastructure, detection pipelines, sandbox analysis, and management tooling.
+
+**Areas of work include:**
+
+* Windows kernel driver development
+* Kernel ↔ user-mode communication using IOCTL
+* Windows services
+* ETW / Sysmon telemetry
+* Static file analysis
+* Dynamic malware analysis
+* Hash and signature-based detection
+* YARA scanning
+* Sigma-based detection logic
+* Real-time protection
+* Self-protection mechanisms
+* VM-based sandbox execution
+* Client/server architecture
+* Authenticated backend APIs
+* Malware intelligence and database update pipelines
+* Desktop management tooling
+
+**Stack:**
+`C++` · `Windows` · `Kernel Development` · `ETW` · `Sysmon` · `YARA` · `Sigma` · `Drogon` · `SQLite` · `VMware`
 
 ---
-
-## 🔬 Featured Projects
 
 ### 🧠 [SpamGuard](https://github.com/NRG-Wardog/SpamGuard)
 
-Transformer-based email spam classification system.
+**Transformer-Based Email Spam Classification**
 
-- Fine-tunes **XLM-RoBERTa**
-- Combines multiple email datasets
-- Dataset deduplication and preprocessing
-- Precision / Recall / F1 / ROC-AUC evaluation
-- Raw `.eml` parsing and inference
-- Gmail OAuth integration
-- Streamlit demonstration application
-- Classical ML baseline for comparison
+An end-to-end NLP project for classifying emails as spam or legitimate mail.
 
-**Stack:** Python · PyTorch · Transformers · Hugging Face · scikit-learn · Pandas · Streamlit
+The project goes beyond model training and includes the full path from raw data to usable inference.
+
+**Highlights:**
+
+* Fine-tuning **XLM-RoBERTa**
+* Multiple public email datasets
+* Data ingestion and normalization
+* Content deduplication
+* Tokenization and preprocessing
+* Precision / Recall / F1 evaluation
+* ROC-AUC and confusion-matrix analysis
+* Raw `.eml` parsing
+* Real-world inference pipeline
+* Gmail OAuth integration
+* Batch classification
+* Streamlit demo application
+* Classical ML baseline for comparison
+
+**Stack:**
+`Python` · `PyTorch` · `Transformers` · `Hugging Face` · `scikit-learn` · `Pandas` · `Streamlit`
 
 ---
 
 ### 🔔 [whenTheAnswer](https://github.com/NRG-Wardog/whenTheAnswer)
 
-Cross-platform monitoring and automation system designed with reliability and rate-limit safety in mind.
+**Reliable Cross-Platform Monitoring & Automation**
 
-Includes:
+A Windows/Linux monitoring system built with reliability and responsible request handling in mind.
 
-- Persistent browser sessions
-- Circuit breaker architecture
-- Exponential backoff
-- Request budgets and throttling
-- Persistent state
-- Controlled recovery
-- Windows & Linux support
+**Engineering features:**
 
-**Stack:** Python · Playwright · Automation
+* Persistent authenticated browser sessions
+* Circuit breaker architecture
+* `CLOSED / OPEN / HALF_OPEN` states
+* Exponential backoff
+* Rate budgets
+* Request throttling
+* Persistent recovery state
+* Controlled recovery probes
+* Authentication attempt limits
+* Cross-platform notifications
+* Defensive failure handling
+
+**Stack:**
+`Python` · `Playwright` · `Windows` · `Linux`
 
 ---
 
 ### 🛡️ [AntiVirus](https://github.com/NRG-Wardog/Antivirus)
 
-C-based antivirus scanner built around signature detection and file scanning.
+**Signature-Based Antivirus Scanner**
 
-Current capabilities:
+An earlier security project written in C that implements file scanning and signature-based malware detection.
 
-- Signature-based detection
-- Recursive directory scanning
-- Full and quick scan modes
-- Logging and scan reporting
+**Current capabilities:**
 
-Current research direction includes:
+* Signature-based file detection
+* Recursive directory scanning
+* Full and quick scan modes
+* Scan logging and reporting
 
-- Heuristic detection
-- PE analysis
-- File entropy
-- Hash-based identification
-- Performance optimization
+The project represents an earlier stage of my security-development work and helped lead into the broader architecture implemented in **AYDO**.
 
-**Stack:** C · Windows · Systems Programming
+**Stack:**
+`C` · `Windows` · `Systems Programming`
 
 ---
 
-### ♟️ [Chess Engine](https://github.com/NRG-Wardog/Chess-Project-Magshimim)
+## 🤖 Applied AI / ML
 
-Object-oriented chess system written in C++ with rule enforcement and communication with a graphical frontend through Windows named pipes.
+A major part of my current work is building systems that turn **unstructured information into structured, useful data**.
 
-**Stack:** C++ · OOP · Windows IPC
+Areas I work with include:
+
+* Natural Language Processing
+* Text classification
+* Information extraction
+* Data understanding
+* Data normalization
+* Semantic matching
+* Entity matching
+* Candidate / job information processing
+* Automated decision pipelines
+* Model evaluation
+* False-positive reduction
+* Data quality
+* AI-assisted workflows
+* Production automation
+
+I am especially interested in the point where **models stop being experiments and become real systems**.
+
+That means thinking about:
+
+**Data → Processing → Model → Decision Logic → API → Workflow → Monitoring**
 
 ---
 
-## 🧠 Currently Learning
+## 🏢 Production Work — HigherYou
 
-### Security & Systems
-- Windows Internals
-- Detection Engineering
-- Secure Systems Programming
-- Endpoint Security Architecture
-- Defensive software design
+At **HigherYou**, I develop and work on systems around recruitment data, automation, AI, and information processing.
 
-### AI & Computer Science
-- Machine Learning
-- NLP
-- Algorithms & Data Structures
-- Computer Architecture
-- Advanced Systems Programming
-- Programming Languages
+My work includes areas such as:
+
+* AI-powered data understanding
+* NLP pipelines
+* Structured extraction from unstructured information
+* Candidate and job data processing
+* Matching and ranking signals
+* Automated workflows
+* Data validation
+* Backend services
+* Large-scale data ingestion
+* Operational automation
+* AI-assisted decision systems
+
+Much of the production code is private, so my public GitHub focuses on projects where I can demonstrate the underlying engineering concepts openly.
+
+---
+
+## 🔐 Security & Systems
+
+My security focus is primarily **defensive engineering**.
+
+Areas I'm actively working with and studying:
+
+* Windows Internals
+* Endpoint telemetry
+* EDR architecture
+* Detection engineering
+* Windows kernel development
+* User-mode / kernel-mode communication
+* ETW
+* Sysmon
+* PE analysis
+* Malware detection
+* Static analysis
+* Dynamic analysis
+* Sandboxing
+* YARA
+* Sigma
+* False-positive control
+* Secure software design
+* Least privilege
+* Service reliability
+
+---
+
+## 🎓 Computer Science
+
+Alongside engineering work, I'm studying Computer Science with a focus on areas that directly strengthen my systems and AI work:
+
+* Algorithms
+* Machine Learning
+* Computer Architecture
+* Advanced Systems Programming
+* Programming Languages
+* Data Structures
+* Software Engineering
 
 ---
 
 ## 🧰 Technical Stack
 
-### Core
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+### Core Languages
+
+![C](https://img.shields.io/badge/C-00599C?style=flat\&logo=c\&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat\&logo=cplusplus\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)
 
 ### AI / Machine Learning
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 
-**Areas:** NLP · Transformers · Classification · Data Processing · Model Evaluation
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat\&logo=pytorch\&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat\&logo=scikitlearn\&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat\&logo=pandas\&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat\&logo=numpy\&logoColor=white)
 
-### Backend & Infrastructure
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
+**Focus:**
+`NLP` · `Transformers` · `Classification` · `Data Processing` · `Model Evaluation`
 
-### Systems
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
+### Windows / Systems
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat\&logo=windows\&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat\&logo=powershell\&logoColor=white)
+
+**Focus:**
+`Windows Internals` · `Kernel Development` · `ETW` · `Services` · `IPC`
+
+### Backend / Infrastructure
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat\&logo=fastapi\&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat\&logo=docker\&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat\&logo=nginx\&logoColor=white)
+
+**Experience with:**
+`REST APIs` · `Authentication` · `SQLite/PostgreSQL` · `Automation` · `Background Services`
 
 ---
 
-## ⚙️ How I Build
+## ⚙️ Engineering Philosophy
 
-I like building systems end-to-end:
+I like building systems end-to-end rather than treating components in isolation.
 
-**Problem → Data → Architecture → Implementation → Evaluation → Deployment → Monitoring**
+My usual approach is:
+
+**Problem → Data → Architecture → Implementation → Testing → Evaluation → Deployment → Monitoring**
 
 I care about:
 
-- Correctness
-- Performance
-- Reliability
-- Observability
-- Model quality
-- False-positive control
-- Maintainability
-- Security
-- Documentation
+* Correctness
+* Reliability
+* Performance
+* Security
+* Detection quality
+* Model quality
+* False-positive control
+* Observability
+* Maintainability
+* Documentation
 
-I treat projects like products — with **tests, benchmarks, documentation, and a roadmap**.
+I try to treat projects like products:
+
+**docs · tests · benchmarks · architecture · roadmap**
 
 ---
 
 ## 💬 Ask Me About
 
-- Applied AI / ML systems
-- NLP and text classification
-- Data understanding and extraction
-- Transformer models
-- ML evaluation
-- Windows internals
-- Detection engineering
-- C/C++ systems programming
-- Endpoint security
-- Automation and reliable backend systems
+* Windows endpoint security
+* Building an AV / EDR architecture
+* Windows kernel development
+* Endpoint telemetry
+* Detection engineering
+* YARA / Sigma pipelines
+* C/C++ systems programming
+* Applied Machine Learning
+* NLP
+* Transformers
+* Text classification
+* Data understanding
+* AI-powered automation
+* Reliable backend systems
 
 ---
 
 ## 🌐 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dorian%20Salomon-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dorian-salomon/)
-[![Discord](https://img.shields.io/badge/Discord-dori__so-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dori_so)
-[![Instagram](https://img.shields.io/badge/Instagram-dori__sal12-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dori_sal12/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dorian%20Salomon-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/dorian-salomon/)
+
+[![Discord](https://img.shields.io/badge/Discord-dori__so-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.gg/dori_so)
+
+[![Instagram](https://img.shields.io/badge/Instagram-dori__sal12-E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)](https://www.instagram.com/dori_sal12/)
 
 ---
 
 ![](https://showme-levis.vercel.app/api/visitors?username=NRG-Wardog)
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/doriansalomon)
