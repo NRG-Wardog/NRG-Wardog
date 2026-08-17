@@ -1,14 +1,14 @@
 # 👋 Hi, I'm Dorian Salomon
 
-### Software Engineer | Endpoint Security & Applied AI/ML
+### Windows Endpoint Security | C/C++ Systems | Applied AI/ML
 
-**C/C++ · Python · Windows · NLP · Machine Learning**
+**C · C++ · Python · Windows Internals · Endpoint Security · Machine Learning · NLP**
 
-I build systems at the intersection of **endpoint security, artificial intelligence, data, and systems engineering**.
+I build systems at the intersection of **endpoint security, systems programming, and applied AI/ML**.
 
-My work spans low-level Windows security development in **C/C++**, applied **Machine Learning and NLP** in Python, backend systems, automation, and data-processing pipelines.
+My main technical focus is Windows endpoint security — working with **kernel/user-mode components, endpoint telemetry, detection pipelines, malware analysis, backend infrastructure, and defensive engineering**.
 
-At **HigherYou**, I work on AI-driven systems that transform large amounts of real-world and unstructured data into structured information, matching signals, automated workflows, and actionable decisions.
+Alongside security research and development, I work on production AI systems at **HigherYou**, turning large amounts of real-world and unstructured information into structured data, matching signals, automation, and actionable decisions.
 
 ---
 
@@ -16,18 +16,18 @@ At **HigherYou**, I work on AI-driven systems that transform large amounts of re
 
 ### 🛡️ [AYDO](https://github.com/NRG-Wardog/Aydo)
 
-**Windows Endpoint Security Platform**
+**Windows Endpoint Protection Platform — EPP / AV / EDR**
 
-AYDO is my main endpoint-security project, built to explore and implement the architecture behind modern **AV / EDR systems**.
+AYDO is my primary security engineering project: a Windows endpoint protection platform built to explore and implement the architecture behind modern endpoint-security products.
 
-The project spans endpoint components, backend infrastructure, detection pipelines, sandbox analysis, and management tooling.
+The system spans the endpoint, detection layer, backend infrastructure, sandbox environment, and management tooling.
 
-**Areas of work include:**
+**Key areas:**
 
 * Windows kernel driver development
-* Kernel ↔ user-mode communication using IOCTL
+* Kernel ↔ user-mode communication via IOCTL
 * Windows services
-* ETW / Sysmon telemetry
+* Endpoint telemetry with ETW / Sysmon
 * Static file analysis
 * Dynamic malware analysis
 * Hash and signature-based detection
@@ -35,24 +35,28 @@ The project spans endpoint components, backend infrastructure, detection pipelin
 * Sigma-based detection logic
 * Real-time protection
 * Self-protection mechanisms
-* VM-based sandbox execution
-* Client/server architecture
-* Authenticated backend APIs
-* Malware intelligence and database update pipelines
-* Desktop management tooling
+* VMware-based isolated sandboxing
+* C++ backend services
+* Authentication and server APIs
+* Malware intelligence / rule update pipelines
+* Desktop management application
+* Testing, diagnostics, and CI/CD
 
-**Stack:**
-`C++` · `Windows` · `Kernel Development` · `ETW` · `Sysmon` · `YARA` · `Sigma` · `Drogon` · `SQLite` · `VMware`
+**Stack**
+
+`C++` · `Windows` · `Kernel Development` · `ETW` · `Sysmon` · `YARA` · `Sigma` · `Drogon` · `PostgreSQL` · `VMware`
+
+> **Status:** Active development
 
 ---
 
 ### 🧠 [SpamGuard](https://github.com/NRG-Wardog/SpamGuard)
 
-**Transformer-Based Email Spam Classification**
+**Transformer-Based Email Spam Detection**
 
-An end-to-end NLP project for classifying emails as spam or legitimate mail.
+An end-to-end NLP project for classifying real email messages as spam or legitimate mail.
 
-The project goes beyond model training and includes the full path from raw data to usable inference.
+The project covers significantly more than model training — it includes data ingestion, preprocessing, evaluation, `.eml` parsing, Gmail integration, and usable inference.
 
 **Highlights:**
 
@@ -62,16 +66,46 @@ The project goes beyond model training and includes the full path from raw data 
 * Content deduplication
 * Tokenization and preprocessing
 * Precision / Recall / F1 evaluation
-* ROC-AUC and confusion-matrix analysis
+* ROC-AUC analysis
+* Confusion matrices
 * Raw `.eml` parsing
-* Real-world inference pipeline
+* Batch inference
 * Gmail OAuth integration
-* Batch classification
 * Streamlit demo application
 * Classical ML baseline for comparison
 
-**Stack:**
+**Stack**
+
 `Python` · `PyTorch` · `Transformers` · `Hugging Face` · `scikit-learn` · `Pandas` · `Streamlit`
+
+---
+
+### ♟️ [Chess Project](https://github.com/NRG-Wardog/Chess-Project-Magshimim)
+
+**C++ Chess Engine & Windows IPC Project**
+
+A collaborative C++ chess project implementing game logic through an object-oriented architecture.
+
+The project models pieces through dedicated classes, handles legal-move validation and game state, and communicates with a graphical frontend using **Windows named pipes**.
+
+**Engineering concepts:**
+
+* Object-oriented C++ design
+* Inheritance and polymorphism
+* Board-state management
+* Piece-specific movement logic
+* Move validation
+* Check detection
+* Exception-based error handling
+* Windows named-pipe IPC
+* Multi-component application architecture
+
+**Stack**
+
+`C++` · `OOP` · `Windows` · `Named Pipes` · `IPC`
+
+> This was a **collaborative project developed by Dorian Salomon and Yan Silberg**.
+> The original repository was hosted under my teammate's GitHub account; this fork preserves our shared project and development history.
 
 ---
 
@@ -79,7 +113,7 @@ The project goes beyond model training and includes the full path from raw data 
 
 **Reliable Cross-Platform Monitoring & Automation**
 
-A Windows/Linux monitoring system built with reliability and responsible request handling in mind.
+A Windows/Linux monitoring system designed around reliability and defensive failure handling rather than aggressive retry behavior.
 
 **Engineering features:**
 
@@ -87,217 +121,148 @@ A Windows/Linux monitoring system built with reliability and responsible request
 * Circuit breaker architecture
 * `CLOSED / OPEN / HALF_OPEN` states
 * Exponential backoff
-* Rate budgets
+* Request rate budgets
 * Request throttling
 * Persistent recovery state
 * Controlled recovery probes
-* Authentication attempt limits
+* Authentication-attempt limits
 * Cross-platform notifications
-* Defensive failure handling
+* Failure-safe recovery
 
-**Stack:**
+**Stack**
+
 `Python` · `Playwright` · `Windows` · `Linux`
 
 ---
 
 ### 🛡️ [AntiVirus](https://github.com/NRG-Wardog/Antivirus)
 
-**Signature-Based Antivirus Scanner**
+**Early C Antivirus Scanner**
 
-An earlier security project written in C that implements file scanning and signature-based malware detection.
+An earlier security project implementing recursive signature-based malware scanning.
 
-**Current capabilities:**
+**Features:**
 
-* Signature-based file detection
+* Signature-based detection
 * Recursive directory scanning
 * Full and quick scan modes
 * Scan logging and reporting
 
-The project represents an earlier stage of my security-development work and helped lead into the broader architecture implemented in **AYDO**.
+This project represents an earlier stage of my security-development work and eventually evolved into the broader endpoint-security architecture explored in **AYDO**.
 
-**Stack:**
+**Stack**
+
 `C` · `Windows` · `Systems Programming`
+
+---
+
+## 🏢 Production Engineering — HigherYou
+
+At **HigherYou**, I work on production systems involving AI, data processing, automation, and information understanding.
+
+My work includes:
+
+* NLP pipelines
+* AI-powered information extraction
+* Structured extraction from unstructured data
+* Data normalization and validation
+* Semantic and entity matching
+* Candidate / job information processing
+* Matching and ranking signals
+* Automated decision pipelines
+* Backend services
+* Large-scale data ingestion
+* Operational automation
+* AI-assisted workflows
+
+A large part of this production work is private, so my public repositories focus on engineering concepts and systems that can be demonstrated openly.
+
+---
+
+## 🔐 Security & Systems Focus
+
+I'm particularly interested in:
+
+`Windows Internals`
+`Endpoint Security`
+`EDR / EPP Architecture`
+`Detection Engineering`
+`Kernel Development`
+`Endpoint Telemetry`
+`ETW / Sysmon`
+`PE Analysis`
+`Static & Dynamic Analysis`
+`Malware Sandboxing`
+`YARA / Sigma`
+`False-Positive Reduction`
+`Secure Software Design`
+`Reliability Engineering`
 
 ---
 
 ## 🤖 Applied AI / ML
 
-A major part of my current work is building systems that turn **unstructured information into structured, useful data**.
+My AI work is focused on turning models into usable systems rather than keeping them as isolated experiments.
 
-Areas I work with include:
+**Typical pipeline:**
 
-* Natural Language Processing
-* Text classification
-* Information extraction
-* Data understanding
-* Data normalization
-* Semantic matching
-* Entity matching
-* Candidate / job information processing
-* Automated decision pipelines
-* Model evaluation
-* False-positive reduction
-* Data quality
-* AI-assisted workflows
-* Production automation
+`Data → Processing → Model → Decision Logic → API → Workflow → Monitoring`
 
-I am especially interested in the point where **models stop being experiments and become real systems**.
+Areas of interest include:
 
-That means thinking about:
-
-**Data → Processing → Model → Decision Logic → API → Workflow → Monitoring**
+`NLP` · `Transformers` · `Classification` · `Information Extraction` · `Semantic Matching` · `Model Evaluation` · `Data Quality`
 
 ---
 
-## 🏢 Production Work — HigherYou
+## 🧰 Core Stack
 
-At **HigherYou**, I develop and work on systems around recruitment data, automation, AI, and information processing.
-
-My work includes areas such as:
-
-* AI-powered data understanding
-* NLP pipelines
-* Structured extraction from unstructured information
-* Candidate and job data processing
-* Matching and ranking signals
-* Automated workflows
-* Data validation
-* Backend services
-* Large-scale data ingestion
-* Operational automation
-* AI-assisted decision systems
-
-Much of the production code is private, so my public GitHub focuses on projects where I can demonstrate the underlying engineering concepts openly.
-
----
-
-## 🔐 Security & Systems
-
-My security focus is primarily **defensive engineering**.
-
-Areas I'm actively working with and studying:
-
-* Windows Internals
-* Endpoint telemetry
-* EDR architecture
-* Detection engineering
-* Windows kernel development
-* User-mode / kernel-mode communication
-* ETW
-* Sysmon
-* PE analysis
-* Malware detection
-* Static analysis
-* Dynamic analysis
-* Sandboxing
-* YARA
-* Sigma
-* False-positive control
-* Secure software design
-* Least privilege
-* Service reliability
-
----
-
-## 🎓 Computer Science
-
-Alongside engineering work, I'm studying Computer Science with a focus on areas that directly strengthen my systems and AI work:
-
-* Algorithms
-* Machine Learning
-* Computer Architecture
-* Advanced Systems Programming
-* Programming Languages
-* Data Structures
-* Software Engineering
-
----
-
-## 🧰 Technical Stack
-
-### Core Languages
+### Languages
 
 ![C](https://img.shields.io/badge/C-00599C?style=flat\&logo=c\&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat\&logo=cplusplus\&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)
 
-### AI / Machine Learning
+### Systems & Security
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat\&logo=windows11\&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat\&logo=powershell\&logoColor=white)
+
+`Windows Internals` · `Kernel Development` · `ETW` · `Services` · `IPC`
+
+### AI / ML
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat\&logo=pytorch\&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat\&logo=scikitlearn\&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat\&logo=pandas\&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat\&logo=numpy\&logoColor=white)
 
-**Focus:**
-`NLP` · `Transformers` · `Classification` · `Data Processing` · `Model Evaluation`
-
-### Windows / Systems
-
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat\&logo=windows\&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat\&logo=powershell\&logoColor=white)
-
-**Focus:**
-`Windows Internals` · `Kernel Development` · `ETW` · `Services` · `IPC`
-
-### Backend / Infrastructure
+### Backend & Infrastructure
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat\&logo=fastapi\&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat\&logo=docker\&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat\&logo=nginx\&logoColor=white)
 
-**Experience with:**
-`REST APIs` · `Authentication` · `SQLite/PostgreSQL` · `Automation` · `Background Services`
+`REST APIs` · `Authentication` · `PostgreSQL / SQLite` · `Automation` · `Background Services`
 
 ---
 
-## ⚙️ Engineering Philosophy
+## ⚙️ Engineering Approach
 
-I like building systems end-to-end rather than treating components in isolation.
+I prefer building systems end-to-end:
 
-My usual approach is:
-
-**Problem → Data → Architecture → Implementation → Testing → Evaluation → Deployment → Monitoring**
+**Problem → Architecture → Implementation → Testing → Evaluation → Deployment → Monitoring**
 
 I care about:
 
-* Correctness
-* Reliability
-* Performance
-* Security
-* Detection quality
-* Model quality
-* False-positive control
-* Observability
-* Maintainability
-* Documentation
+**correctness · reliability · performance · security · observability · maintainability · detection quality · false-positive control**
 
-I try to treat projects like products:
+Every serious project should have:
 
 **docs · tests · benchmarks · architecture · roadmap**
 
 ---
 
-## 💬 Ask Me About
-
-* Windows endpoint security
-* Building an AV / EDR architecture
-* Windows kernel development
-* Endpoint telemetry
-* Detection engineering
-* YARA / Sigma pipelines
-* C/C++ systems programming
-* Applied Machine Learning
-* NLP
-* Transformers
-* Text classification
-* Data understanding
-* AI-powered automation
-* Reliable backend systems
-
----
-
-## 🌐 Connect With Me
+## 🌐 Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dorian%20Salomon-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/dorian-salomon/)
 
