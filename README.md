@@ -124,9 +124,9 @@ My work is directly visible in **12 merged pull requests** under `NRG-Wardog`.
 
 ---
 
-### ♟️ [Chess](https://github.com/NRG-Wardog/Chess)
+### ♟️ [Chess](https://github.com/ysilberg/Chess)
 
-[![Chess CI](https://github.com/NRG-Wardog/Chess/actions/workflows/ci.yml/badge.svg)](https://github.com/NRG-Wardog/Chess/actions/workflows/ci.yml)
+[![Chess CI](https://github.com/ysilberg/Chess/actions/workflows/ci.yml/badge.svg)](https://github.com/ysilberg/Chess/actions/workflows/ci.yml)
 
 **C++ Chess Engine + Windows IPC**
 
@@ -145,7 +145,9 @@ A collaborative C++ engine focused on deterministic game-state logic and multi-c
 
 **Stack:** `C++` · `OOP` · `Windows` · `Named Pipes` · `IPC` · `CMake` · `CI`
 
-> Collaborative project developed by **Dorian Salomon and Yan Silberg**. The original repository was hosted under my teammate's account; this fork preserves the shared development history.
+**Engineering evidence:** [Modernization PR #1](https://github.com/ysilberg/Chess/pull/1) · [CI](https://github.com/ysilberg/Chess/actions/workflows/ci.yml)
+
+> Collaborative project developed by **Dorian Salomon and Yan Silberg**. The canonical repository is maintained under Yan's GitHub account; Dorian's modernization work and contribution history are preserved in the merged pull request and repository history.
 
 ---
 
