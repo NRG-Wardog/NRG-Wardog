@@ -6,7 +6,7 @@
 
 I build production systems across **applied AI/NLP, backend and data engineering, reliability, and Windows endpoint security**.
 
-At **HigherYou**, I own applied AI systems end-to-end: data ingestion, information extraction, normalization, semantic and entity matching, ranking, validation, decision pipelines, backend integration, observability, and operational reliability.
+At **HigherYou**, I own applied AI systems end-to-end: data ingestion, information extraction, normalization, semantic/entity matching, ranking, validation, decision pipelines, backend integration, observability, and operational reliability.
 
 At **Aydo**, I co-build a Windows endpoint-protection platform spanning kernel/user-mode components, endpoint telemetry, static and dynamic analysis, C++ backend services, and isolated malware sandboxing.
 
@@ -30,7 +30,7 @@ My current scope includes:
 - Reliability, observability, retries, structured logging, and failure handling
 - Operational automation connected to real business workflows
 
-A large part of this work is private, so I keep product names, customer data, and internal business logic out of the public profile.
+A large part of this work is private, so product names, customer data, internal datasets, and business logic are intentionally kept out of the public profile.
 
 ### Private engineering scope
 
@@ -38,9 +38,9 @@ Across non-public systems, I have also worked on engineering problems including:
 
 - **Multilingual speech + NLP pipelines**: ASR, speaker diarization, embeddings, translation, evidence-grounded outputs
 - **Real-time ML/backend systems**: asynchronous Python services, WebSockets, PostgreSQL/SQLAlchemy, model orchestration, analytics
-- **ML evaluation systems**: calibration, shadow/replay evaluation, statistical evidence gates, experiment tracking, data-leakage controls
+- **ML evaluation systems**: calibration, shadow/replay evaluation, statistical evidence gates, experiment tracking, leakage controls
 - **Secure integrations**: OAuth 2.0 / PKCE, JWT, encrypted secret storage, audit logging, provider integrations
-- **Production tooling**: retention-aware artifacts, health checks, operator controls, deterministic tests, CI and diagnostics
+- **Production tooling**: retention-aware artifacts, health checks, operator controls, deterministic tests, CI, diagnostics, and recovery workflows
 
 ---
 
@@ -57,7 +57,7 @@ AYDO is my primary security and systems-engineering project. It spans endpoint s
 - Windows kernel driver development and kernel ↔ user-mode communication via IOCTL
 - Windows endpoint service, static scanning, real-time monitoring, and scan orchestration
 - Endpoint telemetry with ETW / Sysmon
-- YARA and Sigma-based detection flows
+- YARA and Sigma-oriented detection flows
 - Static and dynamic malware analysis
 - VMware-based isolated sandboxing with reusable warm-VM lifecycle management
 - C++ backend services with Drogon and PostgreSQL
@@ -66,27 +66,33 @@ AYDO is my primary security and systems-engineering project. It spans endpoint s
 
 **Stack:** `C++20` · `Windows` · `Kernel Development` · `ETW` · `Sysmon` · `YARA` · `Sigma` · `Drogon` · `PostgreSQL` · `VMware`
 
+**Engineering evidence:** [Architecture](https://github.com/NRG-Wardog/Aydo/blob/production/docs/ARCHITECTURE.md) · [Security policy](https://github.com/NRG-Wardog/Aydo/blob/production/SECURITY.md)
+
 ---
 
 ### 🧠 [SpamGuard](https://github.com/NRG-Wardog/SpamGuard)
 
+[![SpamGuard CI](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml)
+
 **NLP Email Classification + Governed ML Data Pipeline**
 
-SpamGuard is an end-to-end NLP project that goes beyond model training. It combines email classification with a governed, reproducible data pipeline and usable inference tooling.
+SpamGuard is an end-to-end NLP/ML engineering project built around reproducible data preparation and usable inference, not just model training.
 
 **Engineering highlights:**
 
-- Multi-source data ingestion with provenance and allowed-use metadata
-- Data-quality reporting across sources, labels, languages, lengths, links, and duplicates
+- Multi-source ingestion with provenance and allowed-use metadata
+- Data-quality reporting across source, label, language, length, links, and duplicates
 - Exact-text deduplication and conflicting-label exclusion
 - Template-aware clustering before splitting
 - Deterministic train / validation / test generation
 - Explicit verification that exact text and template clusters do not leak across splits
 - Transformer-based training, evaluation, and inference
-- Raw `.eml` parsing, batch inference, Gmail integration, and demo tooling
-- Automated tests around data-policy, reproducibility, deduplication, conflicts, and leakage
+- Raw `.eml` parsing, batch inference, read-only Gmail integration, and Streamlit review tooling
+- Deterministic CI tests around policy, reproducibility, deduplication, conflicts, and leakage
 
 **Stack:** `Python` · `PyTorch` · `Transformers` · `NLP` · `Data / ML Engineering` · `Gmail API`
+
+**Engineering evidence:** [ML engineering invariants](https://github.com/NRG-Wardog/SpamGuard/blob/main/docs/ML_ENGINEERING.md) · [CI](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml)
 
 ---
 
@@ -101,7 +107,7 @@ My work is directly visible in **12 merged pull requests** under `NRG-Wardog`.
 **Selected contributions:**
 
 - C++ recommendation and persistence architecture
-- Recommendation ranking and user-product interaction logic
+- Similarity-weighted recommendation ranking and user-product interaction logic
 - Database abstraction with rollback-safe persistence
 - Command / response architecture and integration-level test coverage
 - Backend MVC and REST workflows
@@ -112,11 +118,15 @@ My work is directly visible in **12 merged pull requests** under `NRG-Wardog`.
 
 **Stack:** `C++` · `Node.js` · `Express` · `MongoDB` · `React` · `React Native` · `Docker` · `REST` · `TCP` · `JWT`
 
+**Representative merged PRs:** [#12 — C++ data/recommendation architecture + 46 tests](https://github.com/AdvancedWolt/wolt/pull/12) · [#29 — restaurant/menu management](https://github.com/AdvancedWolt/wolt/pull/29) · [#42 — mobile auth](https://github.com/AdvancedWolt/wolt/pull/42) · [#43 — cart/orders/history](https://github.com/AdvancedWolt/wolt/pull/43) · [#44 — management + Docker integration](https://github.com/AdvancedWolt/wolt/pull/44)
+
 > Collaborative repository under the **AdvancedWolt** organization. Contribution history is preserved in the merged PRs.
 
 ---
 
 ### ♟️ [Chess](https://github.com/NRG-Wardog/Chess)
+
+[![Chess CI](https://github.com/NRG-Wardog/Chess/actions/workflows/ci.yml/badge.svg)](https://github.com/NRG-Wardog/Chess/actions/workflows/ci.yml)
 
 **C++ Chess Engine + Windows IPC**
 
@@ -128,7 +138,7 @@ A collaborative C++ engine focused on deterministic game-state logic and multi-c
 - Legal-move validation and piece-specific rules
 - Check, checkmate, and stalemate detection
 - Self-check prevention and transactional board-state rollback
-- Deterministic board parsing and state handling
+- Deterministic board parsing and serialization
 - Windows named-pipe IPC with a graphical frontend
 - Deterministic automated tests
 - Linux GCC and Windows MSVC CI
@@ -141,31 +151,36 @@ A collaborative C++ engine focused on deterministic game-state logic and multi-c
 
 ### 🔔 [whenTheAnswer](https://github.com/NRG-Wardog/whenTheAnswer)
 
+[![whenTheAnswer CI](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml/badge.svg)](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml)
+
 **Reliability-Focused Cross-Platform Monitoring**
 
-A Windows/Linux monitoring system built around conservative automation and explicit failure behavior.
+A Windows/Linux monitoring system built around conservative automation, persistent protection state, and explicit failure behavior.
 
 **Engineering highlights:**
 
 - Persistent authenticated browser sessions
 - Persistent `CLOSED / OPEN / HALF_OPEN` circuit breaker
-- Exponential backoff and controlled recovery probes
+- Exponential backoff and controlled recovery workflows
 - Request spacing, hourly rate budgets, and jitter
 - `Retry-After` and block/challenge detection
 - Authentication-attempt limits and failure-safe recovery
 - Persistent state across process restarts
+- Deterministic tests for parsing, circuit transitions, persistence, and recovery
 - Cross-platform notifications
 
 **Stack:** `Python` · `Playwright` · `Windows` · `Linux` · `Reliability Engineering`
+
+**Engineering evidence:** [Reliability invariants](https://github.com/NRG-Wardog/whenTheAnswer/blob/main/docs/RELIABILITY.md) · [CI](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml)
 
 ---
 
 ## 🧪 Additional Public Work
 
 - **[TheLost](https://github.com/NRG-Wardog/TheLost)** — BLE proximity safety prototype using Android/Java, Python/Bleak, RSSI distance estimation, Firebase, isolated proximity logic, tests, and CI.
-- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — earlier C signature scanner with recursive directory scanning, quick/full scan modes, and logging; an early step toward the endpoint-security work that later became AYDO.
+- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — early C signature scanner with recursive directory scanning, quick/full scan modes, logging, and a documented progression into AYDO.
 - **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** — contributed the Windows implementation/fixes to a cross-platform screenshot automation utility.
-- **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** — earlier C project using linked structures and OpenCV to build, edit, save, and render frame sequences.
+- **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** — early C project using linked structures, persistence, and OpenCV to build/edit/play frame sequences.
 
 ---
 
