@@ -1,246 +1,171 @@
 # 👋 Hi, I'm Dorian Salomon
 
-### Windows Endpoint Security | C/C++ Systems | Applied AI/ML
+### Applied AI / NLP / ML | Windows Endpoint Security | C/C++ Systems
 
-**C · C++ · Python · Windows Internals · Endpoint Security · Machine Learning · NLP**
+**Member of Technical Staff, AI @ HigherYou · Co-Founder & Security Engineer @ Aydo**
 
-I build systems at the intersection of **endpoint security, systems programming, and applied AI/ML**.
+I build production systems across **applied AI/NLP, backend and data engineering, reliability, and Windows endpoint security**.
 
-My main technical focus is Windows endpoint security — working with **kernel/user-mode components, endpoint telemetry, detection pipelines, malware analysis, backend infrastructure, and defensive engineering**.
+At **HigherYou**, I own applied AI systems end-to-end: data ingestion, information extraction, normalization, semantic and entity matching, ranking, validation, decision pipelines, backend integration, observability, and operational reliability.
 
-Alongside security research and development, I work on production AI systems at **HigherYou**, turning large amounts of real-world and unstructured information into structured data, matching signals, automation, and actionable decisions.
+At **Aydo**, I co-build a Windows endpoint-protection platform spanning kernel/user-mode components, endpoint telemetry, static and dynamic analysis, C++ backend services, and isolated malware sandboxing.
+
+**B.Sc. Computer Science @ Bar-Ilan University · GPA 89 · Expected Sep 2027**
 
 ---
 
-## 🚀 Featured Projects
+## 🏢 Production AI Engineering — HigherYou
+
+Production engineering at HigherYou since **2023**; **Member of Technical Staff, AI** since **December 2025**.
+
+My current scope includes:
+
+- End-to-end ownership of production AI/NLP systems
+- Large-scale and unstructured data ingestion
+- Information extraction and structured normalization
+- Semantic / entity matching and ranking
+- Classification, validation, and decision pipelines
+- Backend services and external integrations
+- Data-quality controls and evaluation workflows
+- Reliability, observability, retries, structured logging, and failure handling
+- Operational automation connected to real business workflows
+
+A large part of this work is private, so I keep product names, customer data, and internal business logic out of the public profile.
+
+### Private engineering scope
+
+Across non-public systems, I have also worked on engineering problems including:
+
+- **Multilingual speech + NLP pipelines**: ASR, speaker diarization, embeddings, translation, evidence-grounded outputs
+- **Real-time ML/backend systems**: asynchronous Python services, WebSockets, PostgreSQL/SQLAlchemy, model orchestration, analytics
+- **ML evaluation systems**: calibration, shadow/replay evaluation, statistical evidence gates, experiment tracking, data-leakage controls
+- **Secure integrations**: OAuth 2.0 / PKCE, JWT, encrypted secret storage, audit logging, provider integrations
+- **Production tooling**: retention-aware artifacts, health checks, operator controls, deterministic tests, CI and diagnostics
+
+---
+
+## 🚀 Featured Engineering Work
 
 ### 🛡️ [AYDO](https://github.com/NRG-Wardog/Aydo)
 
 **Windows Endpoint Protection Platform — EPP / AV / EDR**
 
-AYDO is my primary security engineering project: a Windows endpoint protection platform built to explore and implement the architecture behind modern endpoint-security products.
+AYDO is my primary security and systems-engineering project. It spans endpoint software, kernel components, detection, backend infrastructure, sandboxing, and desktop management.
 
-The system spans the endpoint, detection layer, backend infrastructure, sandbox environment, and management tooling.
+**Engineering areas:**
 
-**Key areas:**
+- Windows kernel driver development and kernel ↔ user-mode communication via IOCTL
+- Windows endpoint service, static scanning, real-time monitoring, and scan orchestration
+- Endpoint telemetry with ETW / Sysmon
+- YARA and Sigma-based detection flows
+- Static and dynamic malware analysis
+- VMware-based isolated sandboxing with reusable warm-VM lifecycle management
+- C++ backend services with Drogon and PostgreSQL
+- Electron / React desktop management application
+- Self-tests, diagnostics, installer and update pipelines
 
-* Windows kernel driver development
-* Kernel ↔ user-mode communication via IOCTL
-* Windows services
-* Endpoint telemetry with ETW / Sysmon
-* Static file analysis
-* Dynamic malware analysis
-* Hash and signature-based detection
-* YARA scanning
-* Sigma-based detection logic
-* Real-time protection
-* Self-protection mechanisms
-* VMware-based isolated sandboxing
-* C++ backend services
-* Authentication and server APIs
-* Malware intelligence / rule update pipelines
-* Desktop management application
-* Testing, diagnostics, and CI/CD
-
-**Stack**
-
-`C++` · `Windows` · `Kernel Development` · `ETW` · `Sysmon` · `YARA` · `Sigma` · `Drogon` · `PostgreSQL` · `VMware`
-
-> **Status:** Active development
+**Stack:** `C++20` · `Windows` · `Kernel Development` · `ETW` · `Sysmon` · `YARA` · `Sigma` · `Drogon` · `PostgreSQL` · `VMware`
 
 ---
 
 ### 🧠 [SpamGuard](https://github.com/NRG-Wardog/SpamGuard)
 
-**Transformer-Based Email Spam Detection**
+**NLP Email Classification + Governed ML Data Pipeline**
 
-An end-to-end NLP project for classifying real email messages as spam or legitimate mail.
+SpamGuard is an end-to-end NLP project that goes beyond model training. It combines email classification with a governed, reproducible data pipeline and usable inference tooling.
 
-The project covers significantly more than model training — it includes data ingestion, preprocessing, evaluation, `.eml` parsing, Gmail integration, and usable inference.
+**Engineering highlights:**
 
-**Highlights:**
+- Multi-source data ingestion with provenance and allowed-use metadata
+- Data-quality reporting across sources, labels, languages, lengths, links, and duplicates
+- Exact-text deduplication and conflicting-label exclusion
+- Template-aware clustering before splitting
+- Deterministic train / validation / test generation
+- Explicit verification that exact text and template clusters do not leak across splits
+- Transformer-based training, evaluation, and inference
+- Raw `.eml` parsing, batch inference, Gmail integration, and demo tooling
+- Automated tests around data-policy, reproducibility, deduplication, conflicts, and leakage
 
-* Fine-tuning **XLM-RoBERTa**
-* Multiple public email datasets
-* Data ingestion and normalization
-* Content deduplication
-* Tokenization and preprocessing
-* Precision / Recall / F1 evaluation
-* ROC-AUC analysis
-* Confusion matrices
-* Raw `.eml` parsing
-* Batch inference
-* Gmail OAuth integration
-* Streamlit demo application
-* Classical ML baseline for comparison
-
-**Stack**
-
-`Python` · `PyTorch` · `Transformers` · `Hugging Face` · `scikit-learn` · `Pandas` · `Streamlit`
+**Stack:** `Python` · `PyTorch` · `Transformers` · `NLP` · `Data / ML Engineering` · `Gmail API`
 
 ---
 
 ### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
 
-**Full-Stack Multi-Client Platform & C++ Recommendation System — Team Project**
+**Full-Stack Multi-Client Platform + C++ Recommendation System — Team Project**
 
-A multi-stage food-delivery platform built as a collaborative software-engineering project. The system combines a **C++ TCP recommendation service**, a **Node.js / Express REST API**, **React** web client, **React Native / Expo** mobile client, **MongoDB**, JWT authentication, and Docker-based deployment.
+A collaborative food-delivery platform combining a **C++ TCP recommendation service**, **Node.js / Express REST API**, **React** web client, **React Native / Expo** mobile client, **MongoDB**, JWT authentication, and Docker.
 
-My work is represented directly in the repository's merged pull-request history, including contributions across the recommendation/data layer, backend architecture, search, restaurant and menu management, mobile authentication, ordering, and system integration.
+My work is directly visible in **12 merged pull requests** under `NRG-Wardog`.
 
 **Selected contributions:**
 
-* C++ recommendation and persistence architecture
-* Recommendation ranking and user-product interaction logic
-* Database abstraction, CRUD flows, rollback-safe persistence, and command/response architecture
-* Backend MVC architecture and REST workflows
-* Search functionality
-* Restaurant and menu management with owner-based authorization
-* Mobile authentication and protected flows
-* Cart, ordering, order history, and cancellation flows
-* Docker-based multi-service integration
-* Automated and integration testing
-* GitHub pull-request workflow and collaborative code review
+- C++ recommendation and persistence architecture
+- Recommendation ranking and user-product interaction logic
+- Database abstraction with rollback-safe persistence
+- Command / response architecture and integration-level test coverage
+- Backend MVC and REST workflows
+- Search, restaurant/menu CRUD, and owner-based authorization
+- Mobile authentication and protected routes
+- Cart, ordering, history, and cancellation flows
+- Docker-based multi-service integration
 
-**Stack**
+**Stack:** `C++` · `Node.js` · `Express` · `MongoDB` · `React` · `React Native` · `Docker` · `REST` · `TCP` · `JWT`
 
-`C++` · `Node.js` · `Express` · `MongoDB` · `React` · `React Native` · `Docker` · `REST` · `TCP` · `JWT`
-
-> **Contribution note:** This is a collaborative repository under the **AdvancedWolt** organization. My contributions are visible in the merged PR history under `NRG-Wardog`.
+> Collaborative repository under the **AdvancedWolt** organization. Contribution history is preserved in the merged PRs.
 
 ---
 
-### ♟️ [Chess Project](https://github.com/NRG-Wardog/Chess)
+### ♟️ [Chess](https://github.com/NRG-Wardog/Chess)
 
-**C++ Chess Engine & Windows IPC Project**
+**C++ Chess Engine + Windows IPC**
 
-A collaborative C++ chess project implementing game logic through an object-oriented architecture and communicating with a graphical frontend using **Windows named pipes**.
+A collaborative C++ engine focused on deterministic game-state logic and multi-component communication.
 
-**Engineering concepts:**
+**Engineering highlights:**
 
-* Object-oriented C++ design
-* Inheritance and polymorphism
-* Deterministic board-state management
-* Piece-specific movement logic
-* Legal-move validation
-* Check, checkmate, and stalemate detection
-* Self-check prevention and transactional rollback
-* Windows named-pipe IPC
-* Multi-component application architecture
-* Deterministic automated tests
-* Linux GCC and Windows MSVC CI
+- Object-oriented C++ design and polymorphic piece model
+- Legal-move validation and piece-specific rules
+- Check, checkmate, and stalemate detection
+- Self-check prevention and transactional board-state rollback
+- Deterministic board parsing and state handling
+- Windows named-pipe IPC with a graphical frontend
+- Deterministic automated tests
+- Linux GCC and Windows MSVC CI
 
-**Stack**
+**Stack:** `C++` · `OOP` · `Windows` · `Named Pipes` · `IPC` · `CMake` · `CI`
 
-`C++` · `OOP` · `Windows` · `Named Pipes` · `IPC` · `CMake` · `CI`
-
-> This was a **collaborative project developed by Dorian Salomon and Yan Silberg**.
-> The original repository was hosted under my teammate's GitHub account; this fork preserves our shared project and development history.
+> Collaborative project developed by **Dorian Salomon and Yan Silberg**. The original repository was hosted under my teammate's account; this fork preserves the shared development history.
 
 ---
 
 ### 🔔 [whenTheAnswer](https://github.com/NRG-Wardog/whenTheAnswer)
 
-**Reliable Cross-Platform Monitoring & Automation**
+**Reliability-Focused Cross-Platform Monitoring**
 
-A Windows/Linux monitoring system designed around reliability and defensive failure handling rather than aggressive retry behavior.
+A Windows/Linux monitoring system built around conservative automation and explicit failure behavior.
 
-**Engineering features:**
+**Engineering highlights:**
 
-* Persistent authenticated browser sessions
-* Circuit breaker architecture
-* `CLOSED / OPEN / HALF_OPEN` states
-* Exponential backoff
-* Request rate budgets
-* Request throttling
-* Persistent recovery state
-* Controlled recovery probes
-* Authentication-attempt limits
-* Cross-platform notifications
-* Failure-safe recovery
+- Persistent authenticated browser sessions
+- Persistent `CLOSED / OPEN / HALF_OPEN` circuit breaker
+- Exponential backoff and controlled recovery probes
+- Request spacing, hourly rate budgets, and jitter
+- `Retry-After` and block/challenge detection
+- Authentication-attempt limits and failure-safe recovery
+- Persistent state across process restarts
+- Cross-platform notifications
 
-**Stack**
-
-`Python` · `Playwright` · `Windows` · `Linux`
+**Stack:** `Python` · `Playwright` · `Windows` · `Linux` · `Reliability Engineering`
 
 ---
 
-### 🛡️ [AntiVirus](https://github.com/NRG-Wardog/Antivirus)
+## 🧪 Additional Public Work
 
-**Early C Antivirus Scanner**
-
-An earlier security project implementing recursive signature-based malware scanning.
-
-**Features:**
-
-* Signature-based detection
-* Recursive directory scanning
-* Full and quick scan modes
-* Scan logging and reporting
-
-This project represents an earlier stage of my security-development work and eventually evolved into the broader endpoint-security architecture explored in **AYDO**.
-
-**Stack**
-
-`C` · `Windows` · `Systems Programming`
-
----
-
-## 🏢 Production Engineering — HigherYou
-
-At **HigherYou**, I work on production systems involving AI, data processing, automation, and information understanding.
-
-My work includes:
-
-* NLP pipelines
-* AI-powered information extraction
-* Structured extraction from unstructured data
-* Data normalization and validation
-* Semantic and entity matching
-* Candidate / job information processing
-* Matching and ranking signals
-* Automated decision pipelines
-* Backend services
-* Large-scale data ingestion
-* Operational automation
-* AI-assisted workflows
-
-A large part of this production work is private, so my public repositories focus on engineering concepts and systems that can be demonstrated openly.
-
----
-
-## 🔐 Security & Systems Focus
-
-I'm particularly interested in:
-
-`Windows Internals`
-`Endpoint Security`
-`EDR / EPP Architecture`
-`Detection Engineering`
-`Kernel Development`
-`Endpoint Telemetry`
-`ETW / Sysmon`
-`PE Analysis`
-`Static & Dynamic Analysis`
-`Malware Sandboxing`
-`YARA / Sigma`
-`False-Positive Reduction`
-`Secure Software Design`
-`Reliability Engineering`
-
----
-
-## 🤖 Applied AI / ML
-
-My AI work is focused on turning models into usable systems rather than keeping them as isolated experiments.
-
-**Typical pipeline:**
-
-`Data → Processing → Model → Decision Logic → API → Workflow → Monitoring`
-
-Areas of interest include:
-
-`NLP` · `Transformers` · `Classification` · `Information Extraction` · `Semantic Matching` · `Model Evaluation` · `Data Quality`
+- **[TheLost](https://github.com/NRG-Wardog/TheLost)** — BLE proximity safety prototype using Android/Java, Python/Bleak, RSSI distance estimation, Firebase, isolated proximity logic, tests, and CI.
+- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — earlier C signature scanner with recursive directory scanning, quick/full scan modes, and logging; an early step toward the endpoint-security work that later became AYDO.
+- **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** — contributed the Windows implementation/fixes to a cross-platform screenshot automation utility.
+- **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** — earlier C project using linked structures and OpenCV to build, edit, save, and render frame sequences.
 
 ---
 
@@ -253,6 +178,7 @@ Areas of interest include:
   <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
   <img src="https://img.shields.io/badge/x86%20Assembly-24292F?style=flat-square" alt="x86 Assembly" />
 </p>
@@ -270,7 +196,7 @@ Areas of interest include:
   <img src="https://img.shields.io/badge/Sigma-6B7280?style=flat-square" alt="Sigma" />
 </p>
 
-`Win32 API` · `Windows Services` · `Sysmon` · `IPC` · `Detection Engineering` · `Static & Dynamic Analysis` · `Reverse Engineering`
+`Win32 API` · `Windows Services` · `Sysmon` · `IPC` · `Endpoint Telemetry` · `Detection Engineering` · `Static & Dynamic Analysis` · `Reverse Engineering` · `Malware Sandboxing`
 
 ### 🧠 AI / ML / NLP
 
@@ -281,11 +207,12 @@ Areas of interest include:
   <img src="https://img.shields.io/badge/Information%20Extraction-7C3AED?style=flat-square" alt="Information Extraction" />
   <img src="https://img.shields.io/badge/Semantic%20Matching-4F46E5?style=flat-square" alt="Semantic Matching" />
   <img src="https://img.shields.io/badge/Ranking-4338CA?style=flat-square" alt="Ranking" />
-  <img src="https://img.shields.io/badge/NER-5B21B6?style=flat-square" alt="NER" />
-  <img src="https://img.shields.io/badge/Model%20Evaluation-6366F1?style=flat-square" alt="Model Evaluation" />
+  <img src="https://img.shields.io/badge/Embeddings-5B21B6?style=flat-square" alt="Embeddings" />
+  <img src="https://img.shields.io/badge/ASR-0F766E?style=flat-square" alt="ASR" />
+  <img src="https://img.shields.io/badge/Speaker%20Diarization-115E59?style=flat-square" alt="Speaker Diarization" />
 </p>
 
-`Text Classification` · `Data / ML Pipelines` · `Data Quality` · `Training / Evaluation / Inference`
+`NER` · `Text Classification` · `Training / Evaluation / Inference` · `Model Calibration` · `Data / ML Pipelines` · `Dataset Governance` · `Leakage Prevention` · `Shadow / Replay Evaluation` · `Statistical Evaluation`
 
 ### ⚙️ Backend & Data
 
@@ -297,10 +224,10 @@ Areas of interest include:
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
   <img src="https://img.shields.io/badge/REST%20APIs-02569B?style=flat-square" alt="REST APIs" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/WebSockets-010101?style=flat-square" alt="WebSockets" />
 </p>
 
-`Async Workflows` · `Authentication` · `Service Integrations` · `Data Processing`
+`SQLAlchemy` · `Pydantic` · `OAuth 2.0 / PKCE` · `JWT` · `Async Workflows` · `Service Integrations` · `Data Processing`
 
 ### 🚀 Infrastructure & Engineering
 
@@ -310,10 +237,11 @@ Areas of interest include:
   <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 </p>
 
-`Testing` · `CI/CD` · `Observability` · `Structured Logging` · `Reliability Engineering`
+`Testing` · `CI/CD` · `Observability` · `Structured Logging` · `Health Checks` · `Failure Recovery` · `Reliability Engineering`
 
 ### 📱 Frontend / Mobile
 
@@ -321,34 +249,26 @@ Areas of interest include:
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
   <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
 </p>
 
 ---
 
 ## ⚙️ Engineering Approach
 
-I prefer building systems end-to-end:
+I treat serious projects like products:
 
-**Problem → Architecture → Implementation → Testing → Evaluation → Deployment → Monitoring**
+**Problem → Architecture → Implementation → Testing → Evaluation → Deployment → Observability**
 
-I care about:
+I optimize for:
 
-**correctness · reliability · performance · security · observability · maintainability · detection quality · false-positive control**
+**correctness · reliability · performance · security · maintainability · data quality · measurable evaluation · explicit failure behavior**
 
-Every serious project should have:
-
-**docs · tests · benchmarks · architecture · roadmap**
+I prefer **evidence over demos**: deterministic tests, reproducible data preparation, CI, metrics, failure handling, documented limitations, and clear operational behavior.
 
 ---
 
 ## 🌐 Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dorian%20Salomon-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dorian-salomon/)
-
-[![Discord](https://img.shields.io/badge/Discord-dori__so-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dori_so)
-
-[![Instagram](https://img.shields.io/badge/Instagram-dori__sal12-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dori_sal12/)
-
----
-
-![](https://showme-levis.vercel.app/api/visitors?username=NRG-Wardog)
+[![Email](https://img.shields.io/badge/Email-dorian123456785%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dorian123456785@gmail.com)
