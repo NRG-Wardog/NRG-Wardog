@@ -98,10 +98,10 @@ Product names, customer data, internal datasets, and private business logic are 
 
 ## 🧪 Additional Public Work
 
-- **[TheLost](https://github.com/NRG-Wardog/TheLost)** — BLE proximity prototype using Android/Java, Python/Bleak, RSSI estimation, Firebase, tests, and CI.
 - **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — hardened C signature scanner with recursive traversal, bounded binary matching, normal/quick modes, deterministic MSVC smoke tests, and CI; historical progression toward AYDO.
-- **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** — contributed Windows implementation/fixes to a cross-platform screenshot automation utility.
+- **[TheLost](https://github.com/NRG-Wardog/TheLost)** — BLE proximity prototype using Android/Java, Python/Bleak, RSSI estimation, Firebase, tests, and CI.
 - **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** — C frame-sequence editor using linked structures, persistence, and OpenCV.
+- **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** — contributed Windows implementation/fixes to a cross-platform screenshot automation utility.
 
 ---
 
