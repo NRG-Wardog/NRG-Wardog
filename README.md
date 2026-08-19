@@ -36,7 +36,9 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 **Highlights:** source provenance and allowed-use metadata · data-quality reporting · exact/conflicting-label deduplication · template clustering · deterministic train/validation/test splits · explicit leakage checks · transformer training/inference · `.eml` and read-only Gmail workflows · CI-tested pipeline invariants.
 
-**Evidence:** [ML engineering invariants](https://github.com/NRG-Wardog/SpamGuard/blob/main/docs/ML_ENGINEERING.md) · [CI](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml)
+**Recorded experiment:** final test **F1 99.24%**, **ROC AUC 99.97%** in the committed notebook run; documented with explicit provenance and generalization caveats.
+
+**Evidence:** [Results](https://github.com/NRG-Wardog/SpamGuard/blob/main/docs/RESULTS.md) · [ML engineering invariants](https://github.com/NRG-Wardog/SpamGuard/blob/main/docs/ML_ENGINEERING.md) · [CI](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml)
 
 ---
 
@@ -97,7 +99,7 @@ Product names, customer data, internal datasets, and private business logic are 
 ## 🧪 Additional Public Work
 
 - **[TheLost](https://github.com/NRG-Wardog/TheLost)** — BLE proximity prototype using Android/Java, Python/Bleak, RSSI estimation, Firebase, tests, and CI.
-- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — early C signature scanner with recursive scanning, quick/full modes, and logging; historical progression toward AYDO.
+- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — hardened C signature scanner with recursive traversal, bounded binary matching, normal/quick modes, deterministic MSVC smoke tests, and CI; historical progression toward AYDO.
 - **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** — contributed Windows implementation/fixes to a cross-platform screenshot automation utility.
 - **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** — C frame-sequence editor using linked structures, persistence, and OpenCV.
 
