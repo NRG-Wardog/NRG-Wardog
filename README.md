@@ -72,9 +72,9 @@ Deterministic chess-engine logic with legal-move validation, check/checkmate/sta
 
 **Reliability-Focused Cross-Platform Monitoring**
 
-Playwright-based monitoring built around persistent sessions, a persistent `CLOSED / OPEN / HALF_OPEN` circuit breaker, request/rate budgets, retry/backoff, `Retry-After` handling, challenge detection, failure-safe recovery, persistent state, deterministic tests, and CI.
+Playwright-based monitoring with a modular Python package separating browser integration, snapshot persistence, runtime orchestration, and reliability controls; built around persistent sessions, a persistent `CLOSED / OPEN / HALF_OPEN` circuit breaker, request/rate budgets, retry/backoff, `Retry-After` handling, challenge detection, failure-safe recovery, deterministic tests, and CI.
 
-**Evidence:** [Reliability invariants](https://github.com/NRG-Wardog/whenTheAnswer/blob/main/docs/RELIABILITY.md) · [CI](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml)
+**Evidence:** [Modular package](https://github.com/NRG-Wardog/whenTheAnswer/tree/main/watcher) · [Reliability invariants](https://github.com/NRG-Wardog/whenTheAnswer/blob/main/docs/RELIABILITY.md) · [CI](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml)
 
 ---
 
