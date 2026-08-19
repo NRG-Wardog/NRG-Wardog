@@ -80,29 +80,59 @@ The project covers significantly more than model training — it includes data i
 
 ---
 
-### ♟️ [Chess Project](https://github.com/NRG-Wardog/Chess-Project-Magshimim)
+### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
+
+**Full-Stack Multi-Client Platform & C++ Recommendation System — Team Project**
+
+A multi-stage food-delivery platform built as a collaborative software-engineering project. The system combines a **C++ TCP recommendation service**, a **Node.js / Express REST API**, **React** web client, **React Native / Expo** mobile client, **MongoDB**, JWT authentication, and Docker-based deployment.
+
+My work is represented directly in the repository's merged pull-request history, including contributions across the recommendation/data layer, backend architecture, search, restaurant and menu management, mobile authentication, ordering, and system integration.
+
+**Selected contributions:**
+
+* C++ recommendation and persistence architecture
+* Recommendation ranking and user-product interaction logic
+* Database abstraction, CRUD flows, rollback-safe persistence, and command/response architecture
+* Backend MVC architecture and REST workflows
+* Search functionality
+* Restaurant and menu management with owner-based authorization
+* Mobile authentication and protected flows
+* Cart, ordering, order history, and cancellation flows
+* Docker-based multi-service integration
+* Automated and integration testing
+* GitHub pull-request workflow and collaborative code review
+
+**Stack**
+
+`C++` · `Node.js` · `Express` · `MongoDB` · `React` · `React Native` · `Docker` · `REST` · `TCP` · `JWT`
+
+> **Contribution note:** This is a collaborative repository under the **AdvancedWolt** organization. My contributions are visible in the merged PR history under `NRG-Wardog`.
+
+---
+
+### ♟️ [Chess Project](https://github.com/NRG-Wardog/Chess)
 
 **C++ Chess Engine & Windows IPC Project**
 
-A collaborative C++ chess project implementing game logic through an object-oriented architecture.
-
-The project models pieces through dedicated classes, handles legal-move validation and game state, and communicates with a graphical frontend using **Windows named pipes**.
+A collaborative C++ chess project implementing game logic through an object-oriented architecture and communicating with a graphical frontend using **Windows named pipes**.
 
 **Engineering concepts:**
 
 * Object-oriented C++ design
 * Inheritance and polymorphism
-* Board-state management
+* Deterministic board-state management
 * Piece-specific movement logic
-* Move validation
-* Check detection
-* Exception-based error handling
+* Legal-move validation
+* Check, checkmate, and stalemate detection
+* Self-check prevention and transactional rollback
 * Windows named-pipe IPC
 * Multi-component application architecture
+* Deterministic automated tests
+* Linux GCC and Windows MSVC CI
 
 **Stack**
 
-`C++` · `OOP` · `Windows` · `Named Pipes` · `IPC`
+`C++` · `OOP` · `Windows` · `Named Pipes` · `IPC` · `CMake` · `CI`
 
 > This was a **collaborative project developed by Dorian Salomon and Yan Silberg**.
 > The original repository was hosted under my teammate's GitHub account; this fork preserves our shared project and development history.
@@ -218,29 +248,29 @@ Areas of interest include:
 
 ### Languages
 
-![C](https://img.shields.io/badge/C-00599C?style=flat\&logo=c\&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat\&logo=cplusplus\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 
 ### Systems & Security
 
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat\&logo=windows11\&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat\&logo=powershell\&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows11&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
 
 `Windows Internals` · `Kernel Development` · `ETW` · `Services` · `IPC`
 
 ### AI / ML
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat\&logo=pytorch\&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat\&logo=scikitlearn\&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat\&logo=pandas\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
 ### Backend & Infrastructure
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat\&logo=fastapi\&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat\&logo=docker\&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat\&logo=nginx\&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
 
 `REST APIs` · `Authentication` · `PostgreSQL / SQLite` · `Automation` · `Background Services`
 
@@ -264,11 +294,11 @@ Every serious project should have:
 
 ## 🌐 Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dorian%20Salomon-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/dorian-salomon/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dorian%20Salomon-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dorian-salomon/)
 
-[![Discord](https://img.shields.io/badge/Discord-dori__so-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.gg/dori_so)
+[![Discord](https://img.shields.io/badge/Discord-dori__so-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dori_so)
 
-[![Instagram](https://img.shields.io/badge/Instagram-dori__sal12-E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)](https://www.instagram.com/dori_sal12/)
+[![Instagram](https://img.shields.io/badge/Instagram-dori__sal12-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dori_sal12/)
 
 ---
 
