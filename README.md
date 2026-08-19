@@ -16,13 +16,15 @@ I build production systems across **applied AI/NLP, backend and data engineering
 
 ### 🛡️ [AYDO](https://github.com/NRG-Wardog/Aydo)
 
+[![AYDO CI](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml/badge.svg?branch=production)](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml)
+
 **Windows Endpoint Protection Platform — EPP / AV / EDR**
 
 A Windows security platform spanning kernel/user-mode telemetry, endpoint services, static and dynamic detection, isolated malware analysis, backend infrastructure, and desktop management.
 
 **Highlights:** Windows kernel driver + IOCTL · ETW/Sysmon telemetry · YARA/Sigma detection flows · VMware sandboxing · C++20/Drogon backend · PostgreSQL · installer/update/self-test infrastructure.
 
-**Evidence:** [Architecture](https://github.com/NRG-Wardog/Aydo/blob/production/docs/ARCHITECTURE.md) · [Security policy](https://github.com/NRG-Wardog/Aydo/blob/production/SECURITY.md)
+**Evidence:** [Architecture](https://github.com/NRG-Wardog/Aydo/blob/production/docs/ARCHITECTURE.md) · [Security policy](https://github.com/NRG-Wardog/Aydo/blob/production/SECURITY.md) · [CI](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml)
 
 ---
 
