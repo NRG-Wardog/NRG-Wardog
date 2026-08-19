@@ -248,31 +248,29 @@ Areas of interest include:
 
 ### Languages
 
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+`C` · `C++` · `Python` · `Java` · `SQL` · `x86 Assembly`
 
 ### Systems & Security
 
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows11&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
+`Windows Internals` · `Win32 API` · `Kernel/User-Mode Architecture` · `Windows Services` · `ETW` · `Sysmon` · `IOCTL` · `IPC`
 
-`Windows Internals` · `Kernel Development` · `ETW` · `Services` · `IPC`
+`Endpoint Security` · `EPP / EDR` · `Detection Engineering` · `Static & Dynamic Analysis` · `Reverse Engineering` · `YARA` · `Sigma`
 
-### AI / ML
+### AI / ML / NLP
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+`PyTorch` · `Transformers` · `NLP` · `Information Extraction` · `Semantic Matching` · `Ranking` · `Text Classification` · `NER` · `Model Evaluation` · `Data / ML Pipelines`
 
-### Backend & Infrastructure
+### Backend & Data
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
+`FastAPI` · `Node.js` · `Express` · `REST APIs` · `PostgreSQL` · `MongoDB` · `SQLite` · `Authentication / JWT` · `Async Workflows` · `Service Integrations`
 
-`REST APIs` · `Authentication` · `PostgreSQL / SQLite` · `Automation` · `Background Services`
+### Infrastructure & Engineering
+
+`Docker` · `Nginx` · `CMake` · `GitHub Actions` · `Linux` · `Git` · `Testing` · `CI/CD` · `Observability` · `Structured Logging` · `Reliability Engineering`
+
+### Frontend / Mobile
+
+`React` · `React Native` · `Expo`
 
 ---
 
