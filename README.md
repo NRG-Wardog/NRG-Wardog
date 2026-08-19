@@ -246,31 +246,82 @@ Areas of interest include:
 
 ## 🧰 Core Stack
 
-### Languages
+### 💻 Languages
 
-`C` · `C++` · `Python` · `Java` · `SQL` · `x86 Assembly`
+<p>
+  <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/x86%20Assembly-24292F?style=flat-square" alt="x86 Assembly" />
+</p>
 
-### Systems & Security
+### 🛡️ Systems & Security
 
-`Windows Internals` · `Win32 API` · `Kernel/User-Mode Architecture` · `Windows Services` · `ETW` · `Sysmon` · `IOCTL` · `IPC`
+<p>
+  <img src="https://img.shields.io/badge/Windows%20Internals-0078D4?style=flat-square&logo=windows11&logoColor=white" alt="Windows Internals" />
+  <img src="https://img.shields.io/badge/Kernel%20%2F%20User--Mode-24292F?style=flat-square" alt="Kernel / User-Mode" />
+  <img src="https://img.shields.io/badge/Endpoint%20Security-B31B1B?style=flat-square" alt="Endpoint Security" />
+  <img src="https://img.shields.io/badge/EPP%20%2F%20EDR-8B0000?style=flat-square" alt="EPP / EDR" />
+  <img src="https://img.shields.io/badge/ETW-0078D4?style=flat-square" alt="ETW" />
+  <img src="https://img.shields.io/badge/IOCTL-4B5563?style=flat-square" alt="IOCTL" />
+  <img src="https://img.shields.io/badge/YARA-5A1A1A?style=flat-square" alt="YARA" />
+  <img src="https://img.shields.io/badge/Sigma-6B7280?style=flat-square" alt="Sigma" />
+</p>
 
-`Endpoint Security` · `EPP / EDR` · `Detection Engineering` · `Static & Dynamic Analysis` · `Reverse Engineering` · `YARA` · `Sigma`
+`Win32 API` · `Windows Services` · `Sysmon` · `IPC` · `Detection Engineering` · `Static & Dynamic Analysis` · `Reverse Engineering`
 
-### AI / ML / NLP
+### 🧠 AI / ML / NLP
 
-`PyTorch` · `Transformers` · `NLP` · `Information Extraction` · `Semantic Matching` · `Ranking` · `Text Classification` · `NER` · `Model Evaluation` · `Data / ML Pipelines`
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Transformers-FFD21E?style=flat-square" alt="Transformers" />
+  <img src="https://img.shields.io/badge/NLP-6F42C1?style=flat-square" alt="NLP" />
+  <img src="https://img.shields.io/badge/Information%20Extraction-7C3AED?style=flat-square" alt="Information Extraction" />
+  <img src="https://img.shields.io/badge/Semantic%20Matching-4F46E5?style=flat-square" alt="Semantic Matching" />
+  <img src="https://img.shields.io/badge/Ranking-4338CA?style=flat-square" alt="Ranking" />
+  <img src="https://img.shields.io/badge/NER-5B21B6?style=flat-square" alt="NER" />
+  <img src="https://img.shields.io/badge/Model%20Evaluation-6366F1?style=flat-square" alt="Model Evaluation" />
+</p>
 
-### Backend & Data
+`Text Classification` · `Data / ML Pipelines` · `Data Quality` · `Training / Evaluation / Inference`
 
-`FastAPI` · `Node.js` · `Express` · `REST APIs` · `PostgreSQL` · `MongoDB` · `SQLite` · `Authentication / JWT` · `Async Workflows` · `Service Integrations`
+### ⚙️ Backend & Data
 
-### Infrastructure & Engineering
+<p>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/REST%20APIs-02569B?style=flat-square" alt="REST APIs" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+</p>
 
-`Docker` · `Nginx` · `CMake` · `GitHub Actions` · `Linux` · `Git` · `Testing` · `CI/CD` · `Observability` · `Structured Logging` · `Reliability Engineering`
+`Async Workflows` · `Authentication` · `Service Integrations` · `Data Processing`
 
-### Frontend / Mobile
+### 🚀 Infrastructure & Engineering
 
-`React` · `React Native` · `Expo`
+<p>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" />
+  <img src="https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+</p>
+
+`Testing` · `CI/CD` · `Observability` · `Structured Logging` · `Reliability Engineering`
+
+### 📱 Frontend / Mobile
+
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
+</p>
 
 ---
 
