@@ -46,6 +46,8 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 ### 📱 [SideStore CoreDevice Refresh](https://github.com/NRG-Wardog/sidestore-coredevice-refresh)
 
+[![Build Current SideStore](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/actions/workflows/build-current.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/actions/workflows/build-current.yml)
+
 **PC-Free iOS App Refresh for Free Apple Accounts**
 
 An iOS transport and automation project that lets Free Apple Account users keep SideStore and two personally signed apps refreshed on the same iPhone, without a PC during refresh runtime.
