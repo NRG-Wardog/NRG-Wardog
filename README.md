@@ -46,11 +46,11 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 ### 📱 [SideStore CoreDevice Refresh](https://github.com/NRG-Wardog/sidestore-coredevice-refresh)
 
-**Same-Device iOS App Refresh over Official LocalDevVPN**
+**PC-Free iOS App Refresh for Free Apple Accounts**
 
-An iOS transport engineering project enabling SideStore to refresh and install signed applications on the same iPhone without a PC during runtime.
+An iOS transport and automation project that lets Free Apple Account users keep SideStore and two personally signed apps refreshed on the same iPhone, without a PC during refresh runtime.
 
-**Highlights:** CoreDeviceProxy over TLS · contiguous CDTunnel framing · RSD · AFC staging · InstallationProxy · jktcp userspace TCP flow control · heartbeat lifecycle · native iOS background refresh scheduling.
+**Highlights:** same-device app renewal · CoreDeviceProxy over TLS · contiguous CDTunnel framing · RSD · AFC staging · InstallationProxy · jktcp userspace TCP flow control · heartbeat lifecycle · native iOS background refresh scheduling.
 
 **Evidence:** [Architecture and build](https://github.com/NRG-Wardog/sidestore-coredevice-refresh#readme) · [Verification record](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/blob/main/docs/VERIFICATION.md) · [Release](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/releases/tag/v1.0.0)
 
