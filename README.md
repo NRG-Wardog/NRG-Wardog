@@ -44,6 +44,18 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 ---
 
+### 📱 [SideStore CoreDevice Refresh](https://github.com/NRG-Wardog/sidestore-coredevice-refresh)
+
+**Same-Device iOS App Refresh over Official LocalDevVPN**
+
+An iOS transport engineering project enabling SideStore to refresh and install signed applications on the same iPhone without a PC during runtime.
+
+**Highlights:** CoreDeviceProxy over TLS · contiguous CDTunnel framing · RSD · AFC staging · InstallationProxy · jktcp userspace TCP flow control · heartbeat lifecycle · native iOS background refresh scheduling.
+
+**Evidence:** [Architecture and build](https://github.com/NRG-Wardog/sidestore-coredevice-refresh#readme) · [Verification record](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/blob/main/docs/VERIFICATION.md) · [Release](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/releases/tag/v1.0.0)
+
+---
+
 ### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
 
 **Full-Stack Multi-Client Platform + C++ Recommendation System — Team Project**
