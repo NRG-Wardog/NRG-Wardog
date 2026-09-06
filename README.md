@@ -60,6 +60,9 @@ An iOS transport and automation project that lets Free Apple Account users keep 
 
 ### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
 
+[![AdvancedWolt CI](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml/badge.svg)](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml)
+
+
 **Full-Stack Multi-Client Platform + C++ Recommendation System — Team Project**
 
 Collaborative food-delivery platform combining a **C++ TCP recommendation service**, **Node.js / Express API**, **React**, **React Native / Expo**, **MongoDB**, JWT, and Docker.
