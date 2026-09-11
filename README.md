@@ -8,7 +8,7 @@ I build production systems across **applied AI/NLP, backend and data engineering
 
 - At **HigherYou**, I own applied AI systems end-to-end across data ingestion, information extraction, normalization, semantic/entity matching, ranking, validation, backend integration, evaluation, and production reliability.
 - At **Aydo**, I co-build a Windows endpoint-protection platform spanning kernel/user-mode components, endpoint telemetry, static/dynamic analysis, C++ backend services, and isolated malware sandboxing.
-- **B.Sc. Computer Science @ Bar-Ilan University · GPA 89 · Expected Sep 2027**
+- **B.Sc. Computer Science @ Bar-Ilan University · GPA 85 · Expected Sep 2027**
 
 ---
 
@@ -44,24 +44,30 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 ---
 
-### 📱 [SideStore CoreDevice Refresh](https://github.com/NRG-Wardog/sidestore-coredevice-refresh)
+### 📱 [SideStore Auto-Refresh](https://github.com/NRG-Wardog/sidestore-auto-refresh)
 
-[![Build Current SideStore](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/actions/workflows/build-current.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/actions/workflows/build-current.yml)
+[![Combined Build](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/livecontainer-build.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/livecontainer-build.yml)
+[![Standalone Build](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/build-current.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/build-current.yml)
 
-**PC-Free iOS App Refresh for Free Apple Accounts**
+**PC-Free SideStore Refresh via LocalDevVPN + Apple's CoreDevice Stack**
 
-An iOS transport and automation project that lets Free Apple Account users keep SideStore and two personally signed apps refreshed on the same iPhone, without a PC during refresh runtime.
+A same-device iOS refresh and automation project for Free Apple Accounts, with both a standalone SideStore build and a LiveContainer + embedded SideStore build. After initial installation and pairing, the stable path refreshes on the iPhone without keeping a PC connected.
 
-**Highlights:** same-device app renewal · CoreDeviceProxy over TLS · contiguous CDTunnel framing · RSD · AFC staging · InstallationProxy · jktcp userspace TCP flow control · heartbeat lifecycle · native iOS background refresh scheduling.
+**Current transport:** LocalDevVPN -> Lockdown -> CoreDeviceProxy/TLS -> CDTunnel -> RSD -> AFC / InstallationProxy -> SideStore refresh.
 
-**Evidence:** [Architecture and build](https://github.com/NRG-Wardog/sidestore-coredevice-refresh#readme) · [Verification record](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/blob/main/docs/VERIFICATION.md) · [Release](https://github.com/NRG-Wardog/sidestore-coredevice-refresh/releases/tag/v1.0.0)
+**Highlights:** same-device refresh · manual, six-hour, daily, and weekly scheduling · preferred refresh time · persistent refresh history · bounded retry/recovery · run-correlated verification · CoreDeviceProxy TLS · CDTunnel framing · RSD · AFC · InstallationProxy · native iOS background scheduling.
+
+**Current releases:** standalone **v1.0.3** based on SideStore 0.7.0 nightly, and combined LiveContainer + SideStore **v2.1.0**.
+
+The standalone build includes the newer SideSign authentication path and upstream GSA 5XX fix. The combined build still depends on the corresponding upstream LiveContainer/SideStore backport; I opened [LiveContainer/SideStore PR #11](https://github.com/LiveContainer/SideStore/pull/11) to contribute that fix upstream.
+
+**Evidence:** [Repository and architecture](https://github.com/NRG-Wardog/sidestore-auto-refresh#readme) · [Verification record](https://github.com/NRG-Wardog/sidestore-auto-refresh/blob/main/docs/VERIFICATION.md) · [Standalone v1.0.3](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v1.0.3) · [Combined v2.1.0](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v2.1.0)
 
 ---
 
 ### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
 
 [![AdvancedWolt CI](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml/badge.svg)](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml)
-
 
 **Full-Stack Multi-Client Platform + C++ Recommendation System - Team Project**
 
@@ -145,7 +151,7 @@ Product names, customer data, internal datasets, and private business logic are 
 
 ## ⚙️ Engineering Approach
 
-**Problem → Architecture → Implementation → Testing → Evaluation → Deployment → Observability**
+**Problem -> Architecture -> Implementation -> Testing -> Evaluation -> Deployment -> Observability**
 
 I optimize for **correctness, reliability, security, maintainability, data quality, measurable evaluation, and explicit failure behavior**.
 
