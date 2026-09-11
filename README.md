@@ -18,7 +18,7 @@ I build production systems across **applied AI/NLP, backend and data engineering
 
 [![AYDO CI](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml/badge.svg?branch=production)](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml)
 
-**Windows Endpoint Protection Platform — EPP / AV / EDR**
+**Windows Endpoint Protection Platform - EPP / AV / EDR**
 
 A Windows security platform spanning kernel/user-mode telemetry, endpoint services, static and dynamic detection, isolated malware analysis, backend infrastructure, and desktop management.
 
@@ -63,13 +63,13 @@ An iOS transport and automation project that lets Free Apple Account users keep 
 [![AdvancedWolt CI](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml/badge.svg)](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml)
 
 
-**Full-Stack Multi-Client Platform + C++ Recommendation System — Team Project**
+**Full-Stack Multi-Client Platform + C++ Recommendation System - Team Project**
 
 Collaborative food-delivery platform combining a **C++ TCP recommendation service**, **Node.js / Express API**, **React**, **React Native / Expo**, **MongoDB**, JWT, and Docker.
 
 My contribution is visible in **12 merged PRs**, including recommendation/persistence architecture, ranking logic, backend MVC/REST workflows, search, restaurant/menu management, mobile authentication, orders, and Docker integration.
 
-**Representative PRs:** [#12 — C++ recommendation/data architecture + 46 tests](https://github.com/AdvancedWolt/wolt/pull/12) · [#29 — restaurant/menu management](https://github.com/AdvancedWolt/wolt/pull/29) · [#42 — mobile auth](https://github.com/AdvancedWolt/wolt/pull/42) · [#43 — cart/orders/history](https://github.com/AdvancedWolt/wolt/pull/43) · [#44 — management + Docker](https://github.com/AdvancedWolt/wolt/pull/44)
+**Representative PRs:** [#12 - C++ recommendation/data architecture + 46 tests](https://github.com/AdvancedWolt/wolt/pull/12) · [#29 - restaurant/menu management](https://github.com/AdvancedWolt/wolt/pull/29) · [#42 - mobile auth](https://github.com/AdvancedWolt/wolt/pull/42) · [#43 - cart/orders/history](https://github.com/AdvancedWolt/wolt/pull/43) · [#44 - management + Docker](https://github.com/AdvancedWolt/wolt/pull/44)
 
 ---
 
@@ -77,7 +77,7 @@ My contribution is visible in **12 merged PRs**, including recommendation/persis
 
 [![Chess CI](https://github.com/ysilberg/Chess/actions/workflows/ci.yml/badge.svg)](https://github.com/ysilberg/Chess/actions/workflows/ci.yml)
 
-**C++ Chess Engine + Windows IPC — Collaborative Project**
+**C++ Chess Engine + Windows IPC - Collaborative Project**
 
 Deterministic chess-engine logic with legal-move validation, check/checkmate/stalemate detection, transactional rollback for self-check prevention, board serialization, Windows named-pipe IPC, automated tests, CMake, and Linux/Windows CI.
 
@@ -117,10 +117,10 @@ Product names, customer data, internal datasets, and private business logic are 
 
 ## 🧪 Additional Public Work
 
-- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** — hardened C signature scanner with recursive traversal, bounded binary matching, normal/quick modes, deterministic MSVC smoke tests, and CI; historical progression toward AYDO.
-- **[TheLost](https://github.com/NRG-Wardog/TheLost)** — BLE proximity prototype using Android/Java, Python/Bleak, RSSI estimation, Firebase, tests, and CI.
-- **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** — C frame-sequence editor using linked structures, persistence, and OpenCV.
-- **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** — contributed Windows implementation/fixes to a cross-platform screenshot automation utility.
+- **[AntiVirus](https://github.com/NRG-Wardog/Antivirus)** - hardened C signature scanner with recursive traversal, bounded binary matching, normal/quick modes, deterministic MSVC smoke tests, and CI; historical progression toward AYDO.
+- **[TheLost](https://github.com/NRG-Wardog/TheLost)** - BLE proximity prototype using Android/Java, Python/Bleak, RSSI estimation, Firebase, tests, and CI.
+- **[GifMaker](https://github.com/NRG-Wardog/GifMaker)** - C frame-sequence editor using linked structures, persistence, and OpenCV.
+- **[Shoot-It](https://github.com/EladCohen08/Shoot-It)** - contributed Windows implementation/fixes to a cross-platform screenshot automation utility.
 
 ---
 
