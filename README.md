@@ -47,21 +47,21 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 ### 📱 [SideStore Auto-Refresh](https://github.com/NRG-Wardog/sidestore-auto-refresh)
 
 [![Combined Build](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/livecontainer-build.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/livecontainer-build.yml)
-[![Standalone Build](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/build-current.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/build-current.yml)
+[![Release](https://img.shields.io/github/v/release/NRG-Wardog/sidestore-auto-refresh)](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/latest)
 
-**PC-Free SideStore Refresh via LocalDevVPN + Apple's CoreDevice Stack**
+**Unified LiveContainer + SideStore with Same-Device CoreDevice Refresh**
 
-A same-device iOS refresh and automation project for Free Apple Accounts, with both a standalone SideStore build and a LiveContainer + embedded SideStore build. After initial installation and pairing, the stable path refreshes on the iPhone without keeping a PC connected.
+An independent open-source iOS systems project that started from a practical problem: the stock SideStore refresh path was not reliable on my setup. I changed the same-device transport path and then built a cleaner, verifiable LiveContainer + SideStore experience around it.
 
-**Current transport:** LocalDevVPN -> Lockdown -> CoreDeviceProxy/TLS -> CDTunnel -> RSD -> AFC / InstallationProxy -> SideStore refresh.
+**Transport:** `LocalDevVPN -> Lockdown -> CoreDeviceProxy TLS -> CDTunnel -> RSD -> AFC / InstallationProxy`
 
-**Highlights:** same-device refresh · manual, six-hour, daily, and weekly scheduling · preferred refresh time · persistent refresh history · bounded retry/recovery · run-correlated verification · CoreDeviceProxy TLS · CDTunnel framing · RSD · AFC · InstallationProxy · native iOS background scheduling.
+**v3 architecture:** LiveContainer remains the host and guest runtime, while SideStore remains authoritative for authentication, signing, sources, installation, Keychain, and its database. Normal use is exposed through one **Home / Apps / Sources / Refresh / Settings** interface instead of switching into a separate embedded SideStore flow.
 
-**Current releases:** standalone **v1.0.3** based on SideStore 0.7.0 nightly, and combined LiveContainer + SideStore **v2.1.0**.
+**Highlights:** same-device refresh without keeping a PC connected after initial setup · explicit six-hour/daily/weekly scheduling · preferred refresh time · persistent history · run-correlated verification · stage-specific transport diagnostics · List/Grid/Compact List layouts · Guest Return controls · startup/recovery hardening · reproducible CI/build evidence.
 
-The standalone build includes the newer SideSign authentication path and upstream GSA 5XX fix. The combined build still depends on the corresponding upstream LiveContainer/SideStore backport; I opened [LiveContainer/SideStore PR #11](https://github.com/LiveContainer/SideStore/pull/11) to contribute that fix upstream.
+**Current releases:** recommended unified **v3.0.0** and standalone SideStore **v1.0.4**.
 
-**Evidence:** [Repository and architecture](https://github.com/NRG-Wardog/sidestore-auto-refresh#readme) · [Verification record](https://github.com/NRG-Wardog/sidestore-auto-refresh/blob/main/docs/VERIFICATION.md) · [Standalone v1.0.3](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v1.0.3) · [Combined v2.1.0](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v2.1.0)
+**Evidence:** [Project README](https://github.com/NRG-Wardog/sidestore-auto-refresh#readme) · [v3.0.0 release](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v3.0.0) · [Verification](https://github.com/NRG-Wardog/sidestore-auto-refresh/blob/main/docs/VERIFICATION.md) · [Architecture](https://github.com/NRG-Wardog/sidestore-auto-refresh/blob/v3.0.0/docs/V3_UNIFIED_ARCHITECTURE.md)
 
 ---
 
