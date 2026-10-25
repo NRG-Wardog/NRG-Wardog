@@ -46,7 +46,7 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 ### 📱 [SideStore Auto-Refresh](https://github.com/NRG-Wardog/sidestore-auto-refresh)
 
-[![Combined Build](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/livecontainer-build.yml/badge.svg)](https://github.com/NRG-Wardog/sidestore-auto-refresh/actions/workflows/livecontainer-build.yml)
+[![Combined Build](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml/badge.svg)](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml)
 [![Release](https://img.shields.io/github/v/release/NRG-Wardog/sidestore-auto-refresh)](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/latest)
 
 **Unified LiveContainer + SideStore with Same-Device CoreDevice Refresh**
@@ -55,13 +55,15 @@ An independent open-source iOS systems project that started from a practical pro
 
 **Transport:** `LocalDevVPN -> Lockdown -> CoreDeviceProxy TLS -> CDTunnel -> RSD -> AFC / InstallationProxy`
 
-**v3 architecture:** LiveContainer remains the host and guest runtime, while SideStore remains authoritative for authentication, signing, sources, installation, Keychain, and its database. Normal use is exposed through one **Home / Apps / Sources / Refresh / Settings** interface instead of switching into a separate embedded SideStore flow.
+**Unified architecture:** LiveContainer remains the host and guest runtime, while SideStore remains authoritative for authentication, signing, sources, installation, Keychain, and its database. Normal use is exposed through one **Home / Apps / Sources / Refresh / Settings** interface instead of switching into a separate embedded SideStore flow.
 
-**Highlights:** same-device refresh without keeping a PC connected after initial setup · explicit six-hour/daily/weekly scheduling · preferred refresh time · persistent history · run-correlated verification · stage-specific transport diagnostics · List/Grid/Compact List layouts · Guest Return controls · startup/recovery hardening · reproducible CI/build evidence.
+**Highlights:** same-device refresh over Wi-Fi + LocalDevVPN after initial computer setup · unified Home / Apps / Sources / Refresh / Settings · IPA installation with extension selection · Sources and LiveContainer guests · JIT-less operation · refresh history and stage-specific diagnostics · List/Grid/Compact List layouts · Guest Return controls.
 
-**Current releases:** recommended unified **v3.0.0** and standalone SideStore **v1.0.4**.
+**Current release:** unified **v6.0.0**, replacing the v3 combined line. The release preserves the exact tested IPA and includes checksums and source/build provenance.
 
-**Evidence:** [Project README](https://github.com/NRG-Wardog/sidestore-auto-refresh#readme) · [v3.0.0 release](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v3.0.0) · [Verification](https://github.com/NRG-Wardog/sidestore-auto-refresh/blob/main/docs/VERIFICATION.md) · [Architecture](https://github.com/NRG-Wardog/sidestore-auto-refresh/blob/v3.0.0/docs/V3_UNIFIED_ARCHITECTURE.md)
+**Device-tested scope:** manual refresh, IPA installation and extension selection, Sources/LC Guests, JIT-less, guest background behavior, and bounded automatic LocalDevVPN activation during the tested foreground refresh flow. These results are specific to my setup; long-duration scheduled background refresh is not established, and iOS controls background execution timing.
+
+**Evidence:** [v6.0.0 release](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/tag/v6.0.0) · [Project README](https://github.com/NRG-Wardog/sidestore-auto-refresh#readme) · [Verification scope](https://github.com/NRG-Wardog/sidestore-auto-refresh#verification-status) · [Pinned build instructions](https://github.com/NRG-Wardog/sidestore-auto-refresh#build-it-yourself)
 
 ---
 
