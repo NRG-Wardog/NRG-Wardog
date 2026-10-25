@@ -16,7 +16,7 @@ I build production systems across **applied AI/NLP, backend and data engineering
 
 ### 🛡️ [AYDO](https://github.com/NRG-Wardog/Aydo)
 
-[![AYDO CI](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml/badge.svg?branch=production)](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml)
+[![AYDO CI](https://img.shields.io/github/actions/workflow/status/NRG-Wardog/Aydo/ci.yml?branch=production&style=flat&label=CI)](https://github.com/NRG-Wardog/Aydo/actions/workflows/ci.yml)
 
 **Windows Endpoint Protection Platform - EPP / AV / EDR**
 
@@ -30,7 +30,7 @@ A Windows security platform spanning kernel/user-mode telemetry, endpoint servic
 
 ### 🧠 [SpamGuard](https://github.com/NRG-Wardog/SpamGuard)
 
-[![SpamGuard CI](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml)
+[![SpamGuard CI](https://img.shields.io/github/actions/workflow/status/NRG-Wardog/SpamGuard/ci.yml?style=flat&label=CI)](https://github.com/NRG-Wardog/SpamGuard/actions/workflows/ci.yml)
 
 **NLP Email Classification + Governed ML Data Pipeline**
 
@@ -47,8 +47,8 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 ### 📱 [SideStore Auto-Refresh](https://github.com/NRG-Wardog/sidestore-auto-refresh)
 
 [![GitHub Stars](https://img.shields.io/github/stars/NRG-Wardog/sidestore-auto-refresh?style=flat&logo=github&label=%E2%AD%90%20Stars&color=gold)](https://github.com/NRG-Wardog/sidestore-auto-refresh/stargazers)
-[![Combined Build](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml/badge.svg)](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml)
-[![Release](https://img.shields.io/github/v/release/NRG-Wardog/sidestore-auto-refresh)](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/latest)
+[![Combined Build](https://img.shields.io/github/actions/workflow/status/NRG-Wardog/LiveContainer/native-app-compile.yml?style=flat&label=Build)](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml)
+[![Release](https://img.shields.io/github/v/release/NRG-Wardog/sidestore-auto-refresh?style=flat&label=Release)](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/latest)
 
 **Unified LiveContainer + SideStore with Same-Device CoreDevice Refresh**
 
@@ -70,7 +70,7 @@ An independent open-source iOS systems project that started from a practical pro
 
 ### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
 
-[![AdvancedWolt CI](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml/badge.svg)](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml)
+[![AdvancedWolt CI](https://img.shields.io/github/actions/workflow/status/AdvancedWolt/wolt/ci.yml?style=flat&label=CI)](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml)
 
 **Full-Stack Multi-Client Platform + C++ Recommendation System - Team Project**
 
@@ -84,7 +84,7 @@ My contribution is visible in **12 merged PRs**, including recommendation/persis
 
 ### ♟️ [Chess](https://github.com/ysilberg/Chess)
 
-[![Chess CI](https://github.com/ysilberg/Chess/actions/workflows/ci.yml/badge.svg)](https://github.com/ysilberg/Chess/actions/workflows/ci.yml)
+[![Chess CI](https://img.shields.io/github/actions/workflow/status/ysilberg/Chess/ci.yml?style=flat&label=CI)](https://github.com/ysilberg/Chess/actions/workflows/ci.yml)
 
 **C++ Chess Engine + Windows IPC - Collaborative Project**
 
@@ -96,7 +96,7 @@ Deterministic chess-engine logic with legal-move validation, check/checkmate/sta
 
 ### 🔔 [whenTheAnswer](https://github.com/NRG-Wardog/whenTheAnswer)
 
-[![whenTheAnswer CI](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml/badge.svg)](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml)
+[![whenTheAnswer CI](https://img.shields.io/github/actions/workflow/status/NRG-Wardog/whenTheAnswer/ci.yml?style=flat&label=CI)](https://github.com/NRG-Wardog/whenTheAnswer/actions/workflows/ci.yml)
 
 **Reliability-Focused Cross-Platform Monitoring**
 
