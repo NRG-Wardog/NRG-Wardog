@@ -46,6 +46,7 @@ End-to-end NLP/ML engineering around reproducible and auditable data preparation
 
 ### 📱 [SideStore Auto-Refresh](https://github.com/NRG-Wardog/sidestore-auto-refresh)
 
+[![GitHub Stars](https://img.shields.io/github/stars/NRG-Wardog/sidestore-auto-refresh?style=flat&logo=github&label=Stars&color=gold)](https://github.com/NRG-Wardog/sidestore-auto-refresh/stargazers)
 [![Combined Build](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml/badge.svg)](https://github.com/NRG-Wardog/LiveContainer/actions/workflows/native-app-compile.yml)
 [![Release](https://img.shields.io/github/v/release/NRG-Wardog/sidestore-auto-refresh)](https://github.com/NRG-Wardog/sidestore-auto-refresh/releases/latest)
 
