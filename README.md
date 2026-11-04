@@ -68,6 +68,23 @@ An independent open-source iOS systems project that started from a practical pro
 
 ---
 
+### 🎙️ [HebEN Dictation](https://github.com/NRG-Wardog/STT)
+
+[![HebEN CI](https://img.shields.io/github/actions/workflow/status/NRG-Wardog/STT/windows-build.yml?branch=main&style=flat&label=CI)](https://github.com/NRG-Wardog/STT/actions/workflows/windows-build.yml)
+[![Release](https://img.shields.io/github/v/release/NRG-Wardog/STT?style=flat&label=Release)](https://github.com/NRG-Wardog/STT/releases/latest)
+
+**Offline Hebrew/English Speech-to-Text for Windows - Native C++ / Win32**
+
+A lightweight background dictation tool that recognizes speech locally and types Unicode text into the focused application using a configurable global hotkey. Built around multilingual Whisper inference, Silero voice activity detection, Windows input integration, and a system-tray interface.
+
+**Highlights:** C++17/Win32 · offline ASR · Hebrew and English dictation · configurable system-wide shortcut · Unicode text insertion · native microphone and tray integration · CPU/CUDA development builds · automated tests and benchmark tooling.
+
+**MVP:** public **v1.0.0 Windows CPU release**. Experimental progressive dictation remains optional; accuracy, performance and compatibility vary by model and application. CPU release benchmarks must be distinguished from CUDA/hybrid experiments.
+
+**Evidence:** [v1.0.0 download](https://github.com/NRG-Wardog/STT/releases/tag/v1.0.0) · [Source and build guide](https://github.com/NRG-Wardog/STT#build-from-source-on-windows) · [Benchmark methodology](https://github.com/NRG-Wardog/STT/blob/main/docs/BENCHMARKS.md) · [CI](https://github.com/NRG-Wardog/STT/actions/workflows/windows-build.yml)
+
+---
+
 ### 🍔 [AdvancedWolt](https://github.com/AdvancedWolt/wolt)
 
 [![AdvancedWolt CI](https://img.shields.io/github/actions/workflow/status/AdvancedWolt/wolt/ci.yml?style=flat&label=CI)](https://github.com/AdvancedWolt/wolt/actions/workflows/ci.yml)
